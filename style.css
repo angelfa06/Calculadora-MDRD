@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px; /* Añadido para margen en dispositivos móviles */
+    box-sizing: border-box; /* Para evitar el desbordamiento */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* Permite que el contenedor se ajuste en móviles */
+    width: 400px; /* Se adapta a un tamaño máximo de 400px */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultado {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%; /* Se ajusta al 100% en móviles */
+        padding: 15px; /* Menos padding en pantallas pequeñas */
+    }
+
+    button {
+        font-size: 0.9em; /* Tamaño de fuente reducido */
+    }
+
+    #resultado {
+        font-size: 1em; /* Tamaño de fuente ajustado */
+    }
+}
